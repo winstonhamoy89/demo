@@ -6,6 +6,7 @@ target 'Demo' do
   use_frameworks!
 
   # Pods for Demo
+	pod "BSImagePicker", "~> 3.1"
 
   target 'DemoTests' do
     inherit! :search_paths

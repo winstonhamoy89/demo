@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B7416B6288121000040C0E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7416B5288121000040C0E2 /* HomeViewController.swift */; };
 		3B7D63A7287D144D00E882E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7D63A6287D144D00E882E9 /* AppDelegate.swift */; };
 		3B7D63A9287D144D00E882E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7D63A8287D144D00E882E9 /* SceneDelegate.swift */; };
 		3B7D63AB287D144D00E882E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7D63AA287D144D00E882E9 /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		16EE21F0DEDC67962DF4647C /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B7416B5288121000040C0E2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3B7D63A3287D144D00E882E9 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7D63A6287D144D00E882E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7D63A8287D144D00E882E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,7 +130,7 @@
 		3B7D63A5287D144D00E882E9 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				3B7D63E4287D4DF300E882E9 /* ADDRESS */,
+				3B7D63E4287D4DF300E882E9 /* Address */,
 				3B7D63E1287D311200E882E9 /* Profile */,
 				3B7D63DC287D1DF700E882E9 /* Home */,
 				3B7D63D9287D19BE00E882E9 /* Login */,
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				3B7D63DD287D1E0C00E882E9 /* Home.storyboard */,
+				3B7416B5288121000040C0E2 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -185,29 +188,29 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		3B7D63E4287D4DF300E882E9 /* ADDRESS */ = {
+		3B7D63E4287D4DF300E882E9 /* Address */ = {
 			isa = PBXGroup;
 			children = (
-				3B7D63E6287D4E1800E882E9 /* ADD */,
-				3B7D63E5287D4E0D00E882E9 /* EDIT */,
+				3B7D63E6287D4E1800E882E9 /* Add */,
+				3B7D63E5287D4E0D00E882E9 /* Edit */,
 			);
-			path = ADDRESS;
+			path = Address;
 			sourceTree = "<group>";
 		};
-		3B7D63E5287D4E0D00E882E9 /* EDIT */ = {
+		3B7D63E5287D4E0D00E882E9 /* Edit */ = {
 			isa = PBXGroup;
 			children = (
 				3B7D63E7287D4E3500E882E9 /* EditAddress.storyboard */,
 			);
-			path = EDIT;
+			path = Edit;
 			sourceTree = "<group>";
 		};
-		3B7D63E6287D4E1800E882E9 /* ADD */ = {
+		3B7D63E6287D4E1800E882E9 /* Add */ = {
 			isa = PBXGroup;
 			children = (
 				3B7D63E9287D4E3F00E882E9 /* AddAddress.storyboard */,
 			);
-			path = ADD;
+			path = Add;
 			sourceTree = "<group>";
 		};
 		3F0AB55A76D9FC8DAD82A705 /* Frameworks */ = {
@@ -244,6 +247,7 @@
 				3B7D639F287D144D00E882E9 /* Sources */,
 				3B7D63A0287D144D00E882E9 /* Frameworks */,
 				3B7D63A1287D144D00E882E9 /* Resources */,
+				3B788CA98878C18ED9C3DF9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +285,7 @@
 				3B7D63C2287D145200E882E9 /* Sources */,
 				3B7D63C3287D145200E882E9 /* Frameworks */,
 				3B7D63C4287D145200E882E9 /* Resources */,
+				1D168BC8CA0CF2B2A4202F79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -368,6 +373,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D168BC8CA0CF2B2A4202F79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo-DemoUITests/Pods-Demo-DemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo-DemoUITests/Pods-Demo-DemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo-DemoUITests/Pods-Demo-DemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B788CA98878C18ED9C3DF9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		972D4B87F830A0DB003A5926 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -441,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7416B6288121000040C0E2 /* HomeViewController.swift in Sources */,
 				3B7D63AB287D144D00E882E9 /* ViewController.swift in Sources */,
 				3B7D63A7287D144D00E882E9 /* AppDelegate.swift in Sources */,
 				3B7D63B1287D144D00E882E9 /* Demo.xcdatamodeld in Sources */,

@@ -11,7 +11,7 @@
         <!--GALLERY-->
         <scene sceneID="eZt-Qo-WTE">
             <objects>
-                <viewController id="kPy-Jf-9b5" sceneMemberID="viewController">
+                <viewController id="kPy-Jf-9b5" customClass="HomeViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0MV-uU-NKr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,6 +32,10 @@
                                 <buttonConfiguration key="configuration" style="filled" image="doc.text.image.fill" catalog="system" title="CHOOSE IMAGE">
                                     <color key="baseBackgroundColor" red="0.2205452389" green="0.4953187322" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="ChooseImageBtn:" destination="w17-km-YWQ" eventType="touchUpInside" id="BQn-wh-FcD"/>
+                                    <action selector="showImagePicker:" destination="kPy-Jf-9b5" eventType="touchUpInside" id="c95-L0-ZYF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="94d-Cl-UAe"/>
@@ -53,6 +57,7 @@
                     <tabBarItem key="tabBarItem" title="GALLERY" image="folder.fill" catalog="system" id="NSH-2i-bsQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwb-Ke-D4z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="w17-km-YWQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="215.94202898550725" y="222.99107142857142"/>
         </scene>
